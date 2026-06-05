@@ -1,12 +1,12 @@
 cask "prq" do
-  version "0.1.1"
+  version "0.2.0"
 
   if Hardware::CPU.arm?
-    sha256 "01fcd166194a10178c1162be0989cc2c07d9722d404a78df5369b5d110462ad4"
+    sha256 "c589e1f3f4e92cf708f7b8f94634598e407a5b51746c40c90c69fa3662fefab3"
     url "https://github.com/kimoofey/tui/releases/download/prq/v#{version}/prq_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/kimoofey/tui/"
   else
-    sha256 "a703e08fe55158ad3e35f7d9a9fe604adb6a4166a30e1a86bc1c691c33045979"
+    sha256 "0a1522b1d55374654f7f092c890fca52566eb8d264994297be084874bc307531"
     url "https://github.com/kimoofey/tui/releases/download/prq/v#{version}/prq_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/kimoofey/tui/"
   end
