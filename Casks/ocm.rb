@@ -1,12 +1,12 @@
 cask "ocm" do
-  version "0.2.0"
+  version "0.2.1"
 
   if Hardware::CPU.arm?
-    sha256 "bb627df963c1f6b2da8206f2fbfa964a347f0bb309275e35fd7f6ae58c40bfa6"
+    sha256 "29c27f7bf25c131b1439632f1075feaceb2aeccfd2de8ec6a4a0fd139e938b57"
     url "https://github.com/kimoofey/tui/releases/download/ocm/v#{version}/ocm_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/kimoofey/tui/"
   else
-    sha256 "aea1cb63d498fc9c664055901a8f26d7f6b2b0f7d0ff9b3ed5b4aaf03192bd4b"
+    sha256 "3b45225f3f94f49a8b88a208ffd3ccbe10d931b76413546d4504153dc63d63de"
     url "https://github.com/kimoofey/tui/releases/download/ocm/v#{version}/ocm_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/kimoofey/tui/"
   end
